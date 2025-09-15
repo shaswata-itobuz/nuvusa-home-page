@@ -1,15 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuvusa Home Page</title>
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold fs-4 me-4" href="#"
+          >nuvosa<span>•</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-lg-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="btn btn-outline-dark">Let’s Talk</a>
+            <button class="search-btn" aria-label="Search"></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section py-section">
+        <div class="container py-lg-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap"
+              >
+                <h1 class="display-4 fw-bold me-2">
+                  Increase your web traffic with our
+                </h1>
+                <span class="expert-badge"
+                  ><img src="/assets/IMAGE/expert.png" alt="Expert Badge"
+                /></span>
+              </div>
+
+              <p class="lead mt-3 mb-4 paragraph-small">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when It is a long it is a long
+                established fact that a reader will be distracted by the
+                readable content of a is simply. It is a long established fact
+                that a reader will be distracted.
+              </p>
+
+              <div
+                class="d-flex justify-content-center justify-content-lg-start gap-4 mt-4"
+              >
+                <a href="#" class="btn btn-warning btn-lg fw-bold rounded-0"
+                  >Get Started</a
+                >
+                <span class="take-a-tour d-flex">
+                  <img src="/assets/IMAGE/Take a tour.svg" alt="" />
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center position-relative"
+            >
+              <img
+                src="/assets/IMAGE/Group 672.png"
+                alt="Woman sitting"
+                class="img-fluid hero-image move-up"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-5">
+        <div class="row justify-content-center row-cols-md-2 row-cols-lg-3">
+          <div class="col d-flex">
+            <div class="service-card flex-fill">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="/assets/IMAGE/social-media.png"
+                  alt="Social Media Icon"
+                  class="me-3 service-image-small"
+                />
+                <h4 class="service-title mb-0">Social Media Management</h4>
+              </div>
+              <p class="service-description">
+                It is a long established fact that a reader will be distracted
+                by the readable content it is a long established fact that...
+              </p>
+              <a href="#" class="service-link"> </a>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="service-card flex-fill">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="/assets/IMAGE/email-marketing.png"
+                  alt="Social Media Icon"
+                  class="me-3 service-image-small"
+                />
+                <h4 class="service-title mb-0">Email Marketing</h4>
+              </div>
+              <p class="service-description">
+                It is a long established fact that a reader will be distracted
+                by the readable content .It is a long established fact that .
+              </p>
+              <a href="#" class="service-link"> </a>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="service-card flex-fill">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="/assets/IMAGE/seo.png"
+                  alt="Social Media Icon"
+                  class="me-3 service-image-small"
+                />
+                <h4 class="service-title mb-0">SEO Management</h4>
+              </div>
+              <p class="service-description">
+                It is a long established fact that a reader will be distracted
+                by the readable content .It is a long established fact that a
+                reader .
+              </p>
+              <a href="#" class="service-link"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <h1 class="text-center mb-3">Optimising Your Website</h1>
+        <p class="text-center lead mb-5">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when it is a long.
+        </p>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="feature-box">
+              <div class="feature-icon">&#128269;</div>
+              <!-- Magnifying glass icon -->
+              <h4>Keyword Research</h4>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the it is a long established.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-box border border-primary">
+              <!-- Added border-primary for highlighting as in image -->
+              <div class="feature-icon">&#127968;</div>
+              <!-- Building icon -->
+              <h4>Content Optimisation</h4>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the it is a long established.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-box">
+              <div class="feature-icon">&#127919;</div>
+              <!-- Target icon -->
+              <h4>Target Analysis</h4>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the it is a long established.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-box">
+              <div class="feature-icon">&#128077;</div>
+              <!-- Thumbs up icon -->
+              <h4>Continuous Testing</h4>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the it is a long established.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
