@@ -25,7 +25,7 @@ $search-btn-size: 44px;
     font-size: 1.5rem;
 
     span {
-      color: $accent-color; 
+      color: $accent-color;
     }
   }
 
@@ -77,12 +77,6 @@ $search-btn-size: 44px;
     justify-content: center;
     border-radius: 4px;
     padding: 0;
-
-    svg {
-      width: 16px;
-      height: 16px;
-      stroke: $dark;
-    }
 
     &:hover {
       background-color: darken($yellow, 10%);
@@ -192,52 +186,86 @@ $search-btn-size: 44px;
 
 
 .service-card {
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: white;
-    margin-bottom: 20px; 
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-bottom: 20px;
 }
+
 .service-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
+
 .service-icon {
-    font-size: 48px;
-    color: #6f42c1; 
-    margin-bottom: 15px;
+  font-size: 48px;
+  color: #6f42c1;
+  margin-bottom: 15px;
 }
+
 .service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
+
 .service-description {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
 }
+
 .service-link {
-    color: #6f42c1;
-    text-decoration: none;
-    font-weight: bold;
+  color: #6f42c1;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 .service-link i {
-    margin-left: 5px;
-    transition: margin-left 0.3s ease-in-out;
+  margin-left: 5px;
+  transition: margin-left 0.3s ease-in-out;
 }
+
 .service-link:hover i {
-    margin-left: 10px;
+  margin-left: 10px;
 }
+
 .service-image-small {
-    width: 70px; 
-    height: 70px; 
-    object-fit: contain;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
 .service-title {
-    font-size: 30;
-    font-weight: normal;
-    
+  font-size: 30;
+  font-weight: normal;
+
 }
 
+
+
+.business-solution {
+  background-image: url('/assets/IMAGE/Group 673.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  
+}
+
+
+.btn-business-primary {
+  background-color: #FFD700;
+  border-color: #FFD700;
+  color: #333;
+}
+
+.btn-business-primary:hover {
+  background-color: #e6c200;
+  border-color: #e6c200;
+  color: #333;
+}
+.text-business-primary { 
+        color: blue; 
+}
