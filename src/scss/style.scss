@@ -7,6 +7,15 @@ $dark: #000;
 $search-btn-size: 44px;
 
 
+
+*
+{
+  font-family: "poppins";
+}
+
+
+
+
 body {
   font-family: "Work-sans", sans-serif;
 }
@@ -246,7 +255,7 @@ body {
   }
 
   .text-business-primary {
-    color: blue;
+    color:yellow;
   }
 }
 
@@ -305,7 +314,6 @@ body {
 
 .pricing-card:hover {
   background: #4e5cf0;
-  /* hover blue */
   color: #fff;
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -325,3 +333,4 @@ body {
 .pricing-card small {
   font-size: 0.85rem;
 }
+
