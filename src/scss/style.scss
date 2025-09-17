@@ -1,4 +1,3 @@
-
 @import "bootstrap/scss/bootstrap";
 
 $primary-color: #4b3ff1;
@@ -7,7 +6,13 @@ $yellow: #fbd300;
 $dark: #000;
 $search-btn-size: 44px;
 
+
+body {
+  font-family: "Work-sans", sans-serif;
+}
+
 .btn-outline-dark {
+
   &:active,
   &.active,
   &:focus,
@@ -20,43 +25,42 @@ $search-btn-size: 44px;
 }
 
 
-  .search-btn {
-    background-color: $yellow;
-    border: none;
-    width: $search-btn-size;
-    height: $search-btn-size;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    padding: 0;
+.search-btn {
+  background-color: $yellow;
+  border: none;
+  width: $search-btn-size;
+  height: $search-btn-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0;
 
-    &:hover {
-      background-color: transparent;
-    }
+  &:hover {
+    background-color: transparent;
   }
+}
 
 .navbar-nav .nav-link {
-    position: relative; /* Needed for positioning the ::after pseudo-element */
-    color: black;
-    text-decoration: none; /* Remove default underline if present */
+  position: relative;
+  color: black;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0; /* Initially hidden */
-    height: 2px; /* Underline thickness */
-    background-color: black; /* Example: #007bff */
-    bottom: 0; /* Position at the bottom of the link */
-    left: 50%; /* Start from the center */
-    transform: translateX(-50%); /* Center the underline */
-    transition: width 0.3s ease; /* Smooth animation for width change */
-}
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 
-.navbar-nav .nav-link:hover::after {
-    width: 100%; /* Expand to full width on hover */
-}
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
 
 
 
@@ -82,164 +86,242 @@ $search-btn-size: 44px;
 
 
 
-.hero-section {
-  background-color: #f8f9fa;
-  position: relative;
-  overflow: hidden;
-  padding-top: 96px;
-  padding-bottom: 96px;
-
-
-  $md: 992px;
-
-  .expert-badge {
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.5rem;
+  .hero-section {
+    background-color: #f8f9fa;
     position: relative;
-    top: -0.5rem;
-    display: inline-block;
-    transform: rotate(-5deg);
+    overflow: hidden;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
-    img {
-      height: 100px;
-      width: auto;
-      vertical-align: middle;
+
+    $md: 992px;
+
+    .expert-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.5rem;
+      position: relative;
+      top: -0.5rem;
+      display: inline-block;
+      transform: rotate(-5deg);
+
+      img {
+        height: 100px;
+        width: auto;
+        vertical-align: middle;
+
+
+        @media (max-width: $md) {
+          height: 60px;
+        }
+      }
+    }
+
+    .paragraph-small {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-image.move-up {
+      position: relative;
+      margin-top: -100px;
 
 
       @media (max-width: $md) {
-        height: 60px;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: $md) {
+      .text-center-sm {
+        text-align: center !important;
+      }
+
+      .d-block-sm {
+        display: block !important;
+      }
+
+      .mt-4 {
+        margin-top: 16px;
       }
     }
   }
 
-  .paragraph-small {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
 
-  .hero-image {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-image.move-up {
-    position: relative;
-    margin-top: -100px;
-
-
-    @media (max-width: $md) {
-      margin-top: 0;
+  @media (max-width: 991.98px) {
+    .hero-section {
+      padding-top: 48px;
+      padding-bottom: 48px;
     }
   }
 
-  @media (max-width: $md) {
-    .text-center-sm {
-      text-align: center !important;
-    }
 
-    .d-block-sm {
-      display: block !important;
-    }
 
-    .mt-4 {
-      margin-top: 16px;
-    }
+  .service-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-icon {
+    font-size: 48px;
+    color: #6f42c1;
+    margin-bottom: 15px;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+
+  .service-link {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .service-link i {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  .service-link:hover i {
+    margin-left: 10px;
+  }
+
+  .service-image-small {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .service-title {
+    font-size: 30;
+    font-weight: normal;
+
+  }
+
+
+
+  .business-solution {
+    background-image: url('/assets/IMAGE/Group 673.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+
+  }
+
+
+  .btn-business-primary {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #333;
+  }
+
+  .btn-business-primary:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+    color: #333;
+  }
+
+  .text-business-primary {
+    color: blue;
   }
 }
 
-
-@media (max-width: 991.98px) {
-  .hero-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-}
-
-
-
-.service-card {
-  padding: 20px;
+.stats-box {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 2rem 1rem;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  margin-bottom: 20px;
+  background: #fff;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
+.stats-number {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
 }
 
-.service-icon {
-  font-size: 48px;
-  color: #6f42c1;
-  margin-bottom: 15px;
-}
-
-.service-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.service-description {
+.stats-text {
   font-size: 0.9rem;
-  color: #6c757d;
-  margin-bottom: 20px;
+  color: #555;
 }
 
-.service-link {
-  color: #6f42c1;
-  text-decoration: none;
-  font-weight: bold;
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
 }
 
-.service-link i {
-  margin-left: 5px;
-  transition: margin-left 0.3s ease-in-out;
+.dot-red {
+  background: #c0392b;
 }
 
-.service-link:hover i {
-  margin-left: 10px;
+.dot-green {
+  background: #27ae60;
 }
 
-.service-image-small {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
+.dot-yellow {
+  background: #f1c40f;
 }
 
-.service-title {
-  font-size: 30;
-  font-weight: normal;
-
+.plans-container text-center {
+  .section-sub-title {
+    font-size: 16px;
+  }
 }
 
-
-
-.business-solution {
-  background-image: url('/assets/IMAGE/Group 673.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #333;
-  
+.pricing-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
 }
 
-
-.btn-business-primary {
-  background-color: #FFD700;
-  border-color: #FFD700;
-  color: #333;
+.pricing-card:hover {
+  background: #4e5cf0;
+  /* hover blue */
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.btn-business-primary:hover {
-  background-color: #e6c200;
-  border-color: #e6c200;
-  color: #333;
+.pricing-card:hover .btn {
+  background: #ffcb05;
+  border: none;
+  color: #000;
 }
-.text-business-primary { 
-        color: blue; 
+
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.pricing-card small {
+  font-size: 0.85rem;
 }
