@@ -8,8 +8,7 @@ $search-btn-size: 44px;
 
 
 
-*
-{
+* {
   font-family: "poppins";
 }
 
@@ -19,20 +18,6 @@ $search-btn-size: 44px;
 body {
   font-family: "Work-sans", sans-serif;
 }
-
-.btn-outline-dark {
-
-  &:active,
-  &.active,
-  &:focus,
-  &:focus-visible {
-    background-color: transparent !important;
-    color: $dark !important;
-    border-color: $dark !important;
-    box-shadow: none !important;
-  }
-}
-
 
 .search-btn {
   background-color: $yellow;
@@ -54,75 +39,50 @@ body {
   position: relative;
   color: black;
   text-decoration: none;
-}
 
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: black;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
 
-  .navbar-nav .nav-link:hover::after {
+  &:hover::after {
     width: 100%;
   }
-
-
-
-  @media (max-width: 991.98px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-
-    .navbar-nav {
-      margin-top: 1rem;
-    }
-
-    .navbar-nav .nav-link {
-      display: inline-block;
-    }
-
-    .d-flex.align-items-center {
-      justify-content: center;
-      margin-top: 1rem;
-    }
-  }
+}
 
 
 
 
-  .hero-section {
-    background-color: #f8f9fa;
+.hero-section {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+
+  $md: 992px;
+
+  .expert-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    transform: rotate(-5deg);
     position: relative;
-    overflow: hidden;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    top: 0.2rem;
 
-
-    $md: 992px;
-
-    .expert-badge {
-      padding: 0.25rem 0.75rem;
-      border-radius: 0.5rem;
-      position: relative;
-      top: -0.5rem;
-      display: inline-block;
-      transform: rotate(-5deg);
-
-      img {
-        height: 100px;
-        width: auto;
-        vertical-align: middle;
-
-
-        @media (max-width: $md) {
-          height: 60px;
-        }
-      }
+    img {
+      height: 60px;
+      width: auto;
+      vertical-align: middle;
     }
 
     .paragraph-small {
@@ -141,6 +101,11 @@ body {
       position: relative;
       margin-top: -100px;
 
+      .custom-btn-size {
+        font-size: 1rem;
+        padding: 20px 20px;
+        width: auto;
+      }
 
       @media (max-width: $md) {
         margin-top: 0;
@@ -255,9 +220,9 @@ body {
   }
 
   .text-business-primary {
-    color:yellow;
+    color: yellow;
   }
-}
+
 
 .stats-box {
   border: 1px solid #eee;
@@ -265,22 +230,27 @@ body {
   padding: 2rem 1rem;
   text-align: center;
   background: #fff;
+  display: flex;
+  flex-wrap: wrap;  /* Ensures elements wrap correctly */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .stats-number {
-  font-size: 2rem;
+  font-size: 4.5rem;
   font-weight: 600;
   color: #333;
 }
 
 .stats-text {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #555;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   display: inline-block;
   margin: 0 12px;
@@ -298,39 +268,54 @@ body {
   background: #f1c40f;
 }
 
-.plans-container text-center {
-  .section-sub-title {
-    font-size: 16px;
+
+
+  .plans-container text-center {
+    .section-sub-title {
+      font-size: 16px;
+    }
+  }
+
+  .pricing-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: 100%;
+  }
+
+  .pricing-card:hover {
+    background: #4e5cf0;
+    color: #fff;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .pricing-card:hover .btn {
+    background: #ffcb05;
+    border: none;
+    color: #000;
+  }
+
+  .pricing-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .pricing-card small {
+    font-size: 0.85rem;
   }
 }
-
-.pricing-card {
-  transition: all 0.3s ease;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  height: 100%;
+.experts-text-secodary {
+  color: #828282;
 }
 
-.pricing-card:hover {
-  background: #4e5cf0;
-  color: #fff;
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.experts-hover-effect {
+  border: 0.5px solid #dfe2e6;
 }
 
-.pricing-card:hover .btn {
-  background: #ffcb05;
+.experts-hover-effect:hover {
+  box-shadow: 0px 34px 50px -17px #0216051A;
   border: none;
-  color: #000;
+  border-radius: 2px;
 }
-
-.pricing-card .price {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.pricing-card small {
-  font-size: 0.85rem;
-}
-
