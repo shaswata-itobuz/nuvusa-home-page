@@ -18,10 +18,10 @@ $search-btn-size: 44px;
 }
 
 @media (min-width: 1800px) {
-    .container {
-        width: 1650px !important;
-        max-width: 1650px !important;
-    }
+  .container {
+    width: 1650px !important;
+    max-width: 1650px !important;
+  }
 }
 
 
@@ -29,9 +29,9 @@ body {
   font-family: "Work-sans", sans-serif;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1800px) {
 
-  /* Navbar container at 1920px */
+ 
   .navbar .container {
     max-width: 1665px;
     margin-left: 127px;
@@ -118,7 +118,7 @@ body {
     background: transparent;
     border-style: solid;
     opacity: 1;
-    font-size:24px;
+    font-size: 24px;
   }
 
   .lets-talk span,
@@ -207,7 +207,7 @@ body {
     width: 100%;
   }
 
- 
+
   .hero-section .row {
     display: flex;
     flex-direction: row;
@@ -226,7 +226,7 @@ body {
 
   }
 
- 
+
   .hero-section .title {
     font-weight: 700 !important;
     font-style: Bold !important;
@@ -236,7 +236,7 @@ body {
 
   }
 
-  
+
   .hero-section .expert-badge img {
     width: 199px;
     height: 79px;
@@ -246,7 +246,7 @@ body {
 
   }
 
- 
+
   .hero-section .paragraph {
     font-family: Poppins;
     font-weight: 400;
@@ -294,7 +294,7 @@ body {
 
   }
 
-  
+
   .hero-section .hero-image {
     max-width: 100%;
     max-height: 100%;
@@ -303,6 +303,7 @@ body {
   }
 
 }
+
 // service card section
 
 .service-card {
@@ -369,9 +370,9 @@ body {
 
   .service-card {
     width: 470px;
-    height:290px;
+    height: 290px;
     opacity: 1;
-    
+
 
   }
 
@@ -409,11 +410,11 @@ body {
 
   }
 
-  .service-link {
-    position:relative;
-    width: 24px;
-    height: 24px;
-  }
+  // .service-link {
+  //   position:relative;
+  //   width: 24px;
+  //   height: 24px;
+  // }
 
   .service-image-small {
     width: 129px;
@@ -432,7 +433,7 @@ body {
     font-size: 55px;
     line-height: 1.2;
     text-transform: capitalize;
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .optimise-business .text .text-primary {
@@ -441,8 +442,8 @@ body {
     line-height: 1.2;
     text-transform: capitalize;
   }
-  .optimise-business .paragraph
-  {
+
+  .optimise-business .paragraph {
     font-family: Poppins;
     font-weight: 400;
     font-style: Regular;
@@ -453,17 +454,201 @@ body {
   }
 }
 
-@media(max-width:1800px)
-{
-  .optimise-business .text
-  {
+@media(max-width:1800px) {
+  .optimise-business .text {
     text-align: center;
   }
-    .optimise-business .paragraph
-    {
-      text-align: center;
-    }
+
+  .optimise-business .paragraph {
+    text-align: center;
+  }
 }
+
+//optimise business cards
+/* Add border bottom on hover and smooth transition */
+.cards {
+  transition: border-bottom 0.3s ease;
+}
+
+.cards:hover {
+  border-bottom: 4px solid #007bff;
+}
+
+// @media(min-width:1800px)
+// {
+//   .optimise-business-cards .cards {
+//   width: 400px; 
+//   height: 472px; 
+//   // position: absolute; 
+//   // top: 1823px; 
+//   // left: 127px; 
+//   }
+//   .head {
+//  font-family: Poppins;
+//   font-weight: 500;
+//   font-style: Medium;
+//   font-size: 24px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+//   width: 224px;
+//   height: 36px;
+//   opacity: 1;
+//   white-space: nowrap;
+// }
+// .cards-paragraph {
+
+//   width: 322px;
+//   height: 81px;
+//   opacity: 1;
+//   font-family: Poppins;
+//   font-weight: 400;
+//   font-style: Regular;
+//   font-size: 17px;
+//   line-height: 27px;
+//   letter-spacing: 0%;
+// }
+// }
+
+
+@media(min-width: 1800px) {
+
+  /* Card Styles */
+  .optimise-business-cards .cards {
+    width: 400px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensure content is spaced evenly */
+    padding: 20px;
+    /* Add padding inside the card */
+    border: 1px solid #ddd;
+    /* Add border to the cards */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: transform 0.3s ease;
+    /* Optional: Add transition on hover */
+  }
+
+  /* Heading Styles */
+  .head {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 224px;
+    height: 36px;
+    opacity: 1;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    /* Reduce space below the heading to fit the design */
+    text-align: center;
+    /* Center-align the heading */
+  }
+
+  /* Paragraph Styles */
+  .cards-paragraph {
+    width: 322px;
+    height: auto;
+    opacity: 1;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    /* Maintain the space above the paragraph */
+    text-align: center;
+    /* Center-align the paragraph */
+  }
+
+  /* Image Styles */
+  .card-image {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 20px;
+    /* Increase space below the image */
+    object-fit: contain;
+    /* Ensure the image fits without distortion */
+  }
+
+  /* Optional: Add hover effect to lift the card slightly */
+  .optimise-business-cards .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media(min-width:1800) {
+  .card-optimise-business .card {
+    width: 370px;
+    height: 289px;
+    opacity: 1;
+
+  }
+
+  /* Icon Image Styles */
+  .card-icon {
+    width: 71px;
+    height: 71px;
+    opacity: 1;
+  }
+
+  /* Heading Styles */
+  .card-title {
+    width: 217px;
+    height: 33px;
+    opacity: 1;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+  }
+
+  /* Paragraph Styles */
+  .card-text {
+    width: 322px;
+    height: 81px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 17px;
+    leading-trim: NONE;
+    line-height: 27px;
+    letter-spacing: 0%;
+
+  }
+
+  /* Link Styles */
+  .card-link {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}
+
+
+
+
+
 //busness solution section
 
 .business-solution {
