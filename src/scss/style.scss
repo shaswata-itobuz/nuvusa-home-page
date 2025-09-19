@@ -1,10 +1,37 @@
 
 @import "bootstrap/scss/bootstrap";
 
-$primary-color: #4b3ff1;
-$accent-color: #d3363a;
-$yellow: #fbd300;
-$dark: #000;
+$red: #e74c3c;
+$active-link-color: #8f9bff;
+$text-color: #212529;
+$search-btn-bg: #FAD725;
+
+$yellow: #ffd600;
+$text-muted: #828282;
+$font-primary: 'Poppins', sans-serif;
+$avatar-size: 36px;
+
+$primary-color: #6c757d;
+$secondary-color: #007bff;
+$card-border-radius: 1px;
+
+$primary-text-color: #333;
+$secondary-text-color: #6c757d; 
+$card-bg: #fff;
+$card-border-radius: 1px;
+$card-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+$social-media-bg: #fcebeb; 
+$email-marketing-bg: #e2f4e8;
+$seo-optimization-bg: #fcf8e3;
+
+$background-color: #ffffff;
+$card-background: #ffffff;
+$text-primary: #000000;
+$text-secondary: #666666;
+$text-dark: #333333;
+$border-radius: 1px;
+$animation-duration: 30s;
 $search-btn-size: 44px;
 
 
@@ -18,24 +45,24 @@ $search-btn-size: 44px;
 }
 
 .nav-link {
-    color: black;//change this 
+    color: black;
     position: relative;
     font-weight: 300;
     transition: all 0.2s;
 
     &:hover {
-        text-decoration: underline #6F77F1;
-        text-underline-offset: 5px;
+        text-decoration: underline black;
+        text-underline-offset: 2px;
     }
 }
 
 a {
-    @media (min-width: 1000px) {
-        font-size: 20px !important;
+    @media (min-width: 1200px) {
+        font-size: 20px;
     }
 
-    @media (min-width: 1500px) {
-        font-size: 24px !important;
+    @media (min-width: 1600px) {
+        font-size: 24px;
     }
 }
 
@@ -43,12 +70,12 @@ a {
     width: 40px;
     height: 40px;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
         width: 65px;
         height: 65px;
     }
 
-    background-color:yellow;//change this
+    background-color:$search-btn-bg;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,11 +87,11 @@ a {
 
 .bottom-link {
     a {
-        font-size: 14px !important;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 1100.98px) {
+@media (max-width: 1200px) {
     .navbar-collapse {
         margin-top: 1rem;
     }
@@ -88,128 +115,170 @@ body {
 
 
 
-//hero section 
-
-@media (min-width: 1800px) {
-
-  .hero-section .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-
-  .hero-section .text_block {
-    text-align: left;
-    width: 863;
-    height: 200;
-    angle: 0 deg;
-    opacity: 1;
-    top: 346px;
-    left: 127px;
-
-  }
-
-
-  .hero-section .title {
-    font-weight: 700 !important;
-    font-style: Bold !important;
-    font-size: 90px;
-    line-height: 100px;
-    letter-spacing: 0% !important;
-
-  }
-
-
-  .hero-section .expert-badge img {
-    width: 199px;
-    height: 79px;
-    opacity: 1;
-    top: 446px;
-    left: 808px;
-
-  }
-
-
-  .hero-section .paragraph {
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    width: 827;
-    height: 120;
-    angle: 0 deg;
-    opacity: 1;
-    top: 586px;
-    left: 127px;
 
 
 
-  }
+//hero section
 
-  .hero-section .get-started {
-    display: flex;
-    width: 218px;
-    height: 76px;
-    opacity: 1;
-    border-radius: 4px !important;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    gap: 30px !important;
-    font-family: Poppins;
-    font-weight: 500;
+.hero-section {
+    background: white;
 
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0% !important;
-    text-align: center !important;
-    white-space: nowrap;
+    @media (min-width: 1800px) {
+        //background: url('../assets/IMAGE/Group\ 672.png') no-repeat center;
+    }
 
-  }
+    a {
+        @media (min-width: 1000px) {
+            font-size: 20px;
+        }
 
-  .hero-section .take-a-tour img {
-    width: 178px;
-    height: 69px;
-    opacity: 1;
+        @media (min-width: 1500px) {
+            font-size: 24px;
+        }
+    }
 
-  }
-
-
-  .hero-section .hero-image {
-    max-width: 100%;
-    max-height: 100%;
     position: relative;
-    top: 70px;
-  }
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.2;
+
+        @media (min-width: 700px) {
+            font-size: 3rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 4.5rem;
+        }
+
+        @media (min-width: 1500px) {
+            font-size: 90px;
+        }
+
+        .expert-tag {
+            display: inline-block;
+
+            .expert-img {
+                height: 50px;
+                margin-top: -5px;
+
+                @media (min-width: 769px) {
+                    height: 70px;
+                }
+
+                @media (min-width: 1200px) {
+                    height: 90px;
+                }
+            }
+        }
+    }
+
+    p {
+        color: $text-muted;
+        font-size: 15px;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    .btn-warning {
+        background-color: $yellow;
+        border-color: $yellow;
+        color: #000;
+
+        &:hover {
+            background-color: darken($yellow, 10%);
+            border-color: darken($yellow, 10%);
+        }
+    }
+
+    .tour-btn {
+        .tour-icon {
+            height: 50px;
+            margin-left: 15%;
+
+            @media (min-width: 768px) {
+                height: 65px;
+            }
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #000;
+        }
+    }
+
+    .hero-img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .creative-team-box {
+        background: rgba($color: #ffffff, $alpha: 0.8);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        margin-top: 1.5rem;
+        z-index: 3;
+
+        @media (min-width: 992px) {
+            position: absolute;
+            bottom: 5%;
+            left: 6%;
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+            color: #212528
+        }
+
+        .team-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: -10px;
+            border: 1px solid #fff;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+                z-index: 2;
+            }
+        }
+
+        .add-avatar {
+            background-color: #f0f0f0;
+            color: #000;
+            font-size: 1rem;
+        }
+    }
 }
 
-//1400px
+@media (max-width: 991.98px) {
 
-@media (min-width:1400)
-{
-    .hero-section .title {
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 90px;
-    line-height: 100px;
-    letter-spacing: 0%;
-  }
-  .hero-section .hero-image
+    .hero-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
 
-  {
-    top :-50px;
-}
-
-
+    .hero-section .hero-image {
+        margin-top: 30px;
+    }
 
 
 // service card section
-
 .service-card {
   padding: 20px;
   text-align: center;
@@ -217,6 +286,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   margin-bottom: 20px;
+  
+  // Ensure cards are flexible and adjust based on screen size
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  // Ensures spacing between title, description, and link
+  height: auto;  // Allow card height to adjust based on content
+  max-width: 100%;  // Ensure the card doesn’t stretch too wide
 }
 
 .service-card:hover {
@@ -239,12 +315,16 @@ body {
   font-size: 0.9rem;
   color: #6c757d;
   margin-bottom: 20px;
+  flex-grow: 1;  // Ensures description takes up remaining space, pushing the link down
 }
 
 .service-link {
   color: #6f42c1;
   text-decoration: none;
   font-weight: bold;
+  margin-left: auto;  // Pushes the arrow to the far right
+  display: flex;
+  align-items: center;  // Aligns the arrow vertically in case it's an icon
 }
 
 .service-link i {
@@ -263,291 +343,261 @@ body {
 }
 
 .service-title {
-  font-size: 30;
+  font-size: 30px;
   font-weight: normal;
-
 }
 
-//responsive media
-
-@media (min-width: 1800px) {
-
+// Mobile-first responsive design - defaults are for mobile, so this applies first
+@media (max-width: 767px) {
   .service-card {
-    width: 470px;
-    height: 290px;
-    opacity: 1;
-
-
-  }
-
-  // .services-icon {
-  //   width: 129px;
-  //   height: 129px;
-  //   opacity: 1;
-
-  // }
-
-  .service-title {
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 38px;
-    line-height: 100%;
-    letter-spacing: 0%;
-
-
+    width: 100%;  // Full width on mobile
+    padding: 15px;  // Slightly reduce padding on small screens
   }
 
   .service-description {
-    width: 470px;
-    height: 81px;
-    opacity: 1;
-    top: 1256px;
-    left: 152px;
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 17px;
-    line-height: 27px;
-    letter-spacing: 0%;
-
-
+    font-size: 14px;  // Adjust description font size for smaller screens
   }
 
-  // .service-link {
-  //   position:relative;
-  //   width: 24px;
-  //   height: 24px;
-  // }
+  .service-title {
+    font-size: 1.25rem;  // Adjust title font size for smaller screens
+  }
+
+  .service-image-small {
+    width: 60px;  // Slightly smaller image on mobile
+    height: 60px;
+  }
+}
+
+// Larger devices - adjust as the screen size increases
+@media (min-width: 768px) {
+  .service-card {
+    width: 48%;  // Cards take up half the screen width on medium devices (like tablets)
+    margin: 10px;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .service-image-small {
+    width: 70px;  // Standard image size for medium screens
+    height: 70px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .service-card {
+    width: 23%;  // Cards take up 23% of the width on large screens (large desktop)
+  }
+
+  .service-title {
+    font-size: 38px;
+  }
+
+  .service-description {
+    font-size: 17px;
+  }
 
   .service-image-small {
     width: 129px;
     height: 129px;
-    opacity: 1;
-
   }
 }
+
+
 
 //optimise business section
-@media (min-width: 1800px) {
-  .optimise-business .text {
-    text-align: left;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 1.2;
-    text-transform: capitalize;
-    max-width: 100%;
-  }
 
-  .optimise-business .text .text-primary {
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 1.2;
-    text-transform: capitalize;
-  }
 
-  .optimise-business .paragraph {
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 17px !important;
-    line-height: 27px;
-    letter-spacing: 0%;
 
-  }
-}
 
-@media(max-width:1800px) {
-  .optimise-business .text {
-    text-align: center;
-  }
-
-  .optimise-business .paragraph {
-    text-align: center;
-  }
-}
-
-//optimise business cards
-/* Add border bottom on hover and smooth transition */
-.cards {
-  transition: border-bottom 0.3s ease;
-}
-
-.cards:hover {
-  border-bottom: 4px solid #007bff;
-}
-
-// @media(min-width:1800px)
-// {
-//   .optimise-business-cards .cards {
-//   width: 400px; 
-//   height: 472px; 
-//   // position: absolute; 
-//   // top: 1823px; 
-//   // left: 127px; 
+// @media (min-width: 1800px) {
+//   .optimise-business .text {
+//     text-align: left;
+//     font-family: Poppins, sans-serif;
+//     font-weight: 500;
+//     font-size: 55px;
+//     line-height: 1.2;
+//     text-transform: capitalize;
+//     max-width: 100%;
 //   }
+
+//   .optimise-business .text .text-primary {
+//     font-weight: 500;
+//     font-size: 55px;
+//     line-height: 1.2;
+//     text-transform: capitalize;
+//   }
+
+//   .optimise-business .paragraph {
+//     font-family: Poppins;
+//     font-weight: 400;
+//     font-style: Regular;
+//     font-size: 17px !important;
+//     line-height: 27px;
+//     letter-spacing: 0%;
+
+//   }
+// }
+
+// @media(max-width:1800px) {
+//   .optimise-business .text {
+//     text-align: center;
+//   }
+
+//   .optimise-business .paragraph {
+//     text-align: center;
+//   }
+// }
+
+// //optimise business cards
+// /* Add border bottom on hover and smooth transition */
+// .cards {
+//   transition: border-bottom 0.3s ease;
+// }
+
+// .cards:hover {
+//   border-bottom: 4px solid #007bff;
+// }
+
+// @media(min-width: 1800px) {
+
+//   /* Card Styles */
+//   .optimise-business-cards .cards {
+//     width: 400px;
+//     height: 472px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-between;
+//     /* Ensure content is spaced evenly */
+//     padding: 20px;
+//     /* Add padding inside the card */
+//     border: 1px solid #ddd;
+//     /* Add border to the cards */
+//     border-radius: 10px;
+//     /* Rounded corners */
+//     transition: transform 0.3s ease;
+//     /* Optional: Add transition on hover */
+//   }
+
+//   /* Heading Styles */
 //   .head {
-//  font-family: Poppins;
-//   font-weight: 500;
-//   font-style: Medium;
-//   font-size: 24px;
-//   line-height: 100%;
-//   letter-spacing: 0%;
-//   width: 224px;
-//   height: 36px;
-//   opacity: 1;
-//   white-space: nowrap;
+//     font-family: Poppins;
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 100%;
+//     letter-spacing: 0%;
+//     width: 224px;
+//     height: 36px;
+//     opacity: 1;
+//     white-space: nowrap;
+//     margin-bottom: 15px;
+//     /* Reduce space below the heading to fit the design */
+//     text-align: center;
+//     /* Center-align the heading */
+//   }
+
+//   /* Paragraph Styles */
+//   .cards-paragraph {
+//     width: 322px;
+//     height: auto;
+//     opacity: 1;
+//     font-family: Poppins;
+//     font-weight: 400;
+//     font-size: 17px;
+//     line-height: 27px;
+//     letter-spacing: 0%;
+//     margin-top: 15px;
+//     /* Maintain the space above the paragraph */
+//     text-align: center;
+//     /* Center-align the paragraph */
+//   }
+
+//   /* Image Styles */
+//   .card-image {
+//     width: 77px;
+//     height: 77px;
+//     margin-bottom: 20px;
+//     /* Increase space below the image */
+//     object-fit: contain;
+//     /* Ensure the image fits without distortion */
+//   }
+
+//   /* Optional: Add hover effect to lift the card slightly */
+//   .optimise-business-cards .cards:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   }
 // }
-// .cards-paragraph {
 
-//   width: 322px;
-//   height: 81px;
-//   opacity: 1;
-//   font-family: Poppins;
-//   font-weight: 400;
-//   font-style: Regular;
-//   font-size: 17px;
-//   line-height: 27px;
-//   letter-spacing: 0%;
-// }
-// }
+// @media(min-width:1800) {
+//   .card-optimise-business .card {
+//     width: 370px;
+//     height: 289px;
+//     opacity: 1;
 
+//   }
 
-@media(min-width: 1800px) {
+//   /* Icon Image Styles */
+//   .card-icon {
+//     width: 71px;
+//     height: 71px;
+//     opacity: 1;
+//   }
 
-  /* Card Styles */
-  .optimise-business-cards .cards {
-    width: 400px;
-    height: 472px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* Ensure content is spaced evenly */
-    padding: 20px;
-    /* Add padding inside the card */
-    border: 1px solid #ddd;
-    /* Add border to the cards */
-    border-radius: 10px;
-    /* Rounded corners */
-    transition: transform 0.3s ease;
-    /* Optional: Add transition on hover */
-  }
+//   /* Heading Styles */
+//   .card-title {
+//     width: 217px;
+//     height: 33px;
+//     opacity: 1;
 
-  /* Heading Styles */
-  .head {
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    width: 224px;
-    height: 36px;
-    opacity: 1;
-    white-space: nowrap;
-    margin-bottom: 15px;
-    /* Reduce space below the heading to fit the design */
-    text-align: center;
-    /* Center-align the heading */
-  }
+//     font-family: Poppins;
+//     font-weight: 500;
+//     font-style: Medium;
+//     font-size: 22px;
+//     line-height: 100%;
+//     letter-spacing: 0%;
+//     text-transform: capitalize;
 
-  /* Paragraph Styles */
-  .cards-paragraph {
-    width: 322px;
-    height: auto;
-    opacity: 1;
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    margin-top: 15px;
-    /* Maintain the space above the paragraph */
-    text-align: center;
-    /* Center-align the paragraph */
-  }
+//   }
 
-  /* Image Styles */
-  .card-image {
-    width: 77px;
-    height: 77px;
-    margin-bottom: 20px;
-    /* Increase space below the image */
-    object-fit: contain;
-    /* Ensure the image fits without distortion */
-  }
+//   /* Paragraph Styles */
+//   .card-text {
+//     width: 322px;
+//     height: 81px;
+//     font-family: Poppins;
+//     font-weight: 400;
+//     font-style: Regular;
+//     font-size: 17px;
+//     leading-trim: NONE;
+//     line-height: 27px;
+//     letter-spacing: 0%;
 
-  /* Optional: Add hover effect to lift the card slightly */
-  .optimise-business-cards .cards:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-}
+//   }
 
-@media(min-width:1800) {
-  .card-optimise-business .card {
-    width: 370px;
-    height: 289px;
-    opacity: 1;
-
-  }
-
-  /* Icon Image Styles */
-  .card-icon {
-    width: 71px;
-    height: 71px;
-    opacity: 1;
-  }
-
-  /* Heading Styles */
-  .card-title {
-    width: 217px;
-    height: 33px;
-    opacity: 1;
-
-    font-family: Poppins;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 22px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: capitalize;
-
-  }
-
-  /* Paragraph Styles */
-  .card-text {
-    width: 322px;
-    height: 81px;
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 17px;
-    leading-trim: NONE;
-    line-height: 27px;
-    letter-spacing: 0%;
-
-  }
-
-  /* Link Styles */
-  .card-link {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-  }
+//   /* Link Styles */
+//   .card-link {
+//     font-weight: 600;
+//     font-size: 1rem;
+//     color: #007bff;
+//     text-decoration: none;
+//     cursor: pointer;
+//     text-align: center;
+//   }
 
   
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add shadow effect on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-}
+//   .card:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     /* Add shadow effect on hover */
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//   }
+// }
 
 
 
