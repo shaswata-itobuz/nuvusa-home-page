@@ -15,56 +15,69 @@
 
   <body>
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg bg-white py-3">
-      <div class="container px-4">
-        <a class="navbar-brand fw-bold fs-4 me-4" href="#"
-          >nuvosa<span class="text-danger">•</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <section class="navbar-section">
+      <nav
+        class="navbar navbar-expand-xl navbar-light bg-white py-3 py-lg-4 py-xxl-5"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="fw-semibold text-dark fs-1">nuvosa</span
+            ><span class="text-danger fs-2">•</span>
+          </a>
 
-        <div
-          class="collapse navbar-collapse justify-content-lg-between"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav ms-auto mx-5 mb-2 mb-lg-0 gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link active home" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link projects" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link Blog" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link Pricing" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link Contact" href="#">Contact</a>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center gap-2">
-            <a href="#" class="btn btn-outline-dark rounded-0 lets-talk"
-              >Let’s Talk</a
-            >
-            <button
-              class="search search-btn rounded-0"
-              aria-label="Search"
-            ></button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 row gap-4">
+              <li class="nav-item col">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center ms-xl-5 mt-3 mt-lg-0">
+              <a
+                href="#"
+                class="btn px-3 px-lg-5 py-lg-3 rounded-1 btn-outline-dark me-2"
+                >Let's Talk</a
+              >
+              <a
+                href="#"
+                class="btn rounded-1 btn-warning search-btn d-flex align-items-center justify-content-center"
+              >
+                <img src="./assets/IMAGE/Search 2.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
+
+    <!-- main section -->
     <main>
       <!-- hero section -->
       <section class="hero-section py-section">
@@ -202,7 +215,7 @@
 
         <p class="paragraph text-muted fs-6 mb-5">
           It is a long established fact that a reader will be distracted by the
-          readable <br>content of a page when it is a long.
+          readable <br />content of a page when it is a long.
         </p>
       </div>
       <!-- optimise cards -->
@@ -308,21 +321,31 @@
           <div class="col">
             <div class="card border-0">
               <div class="icon-square mb-3">
-                <img src="./assets/IMAGE/Lightning-alt.svg" alt="Icon 1" class="card-icon" />
+                <img
+                  src="./assets/IMAGE/Lightning-alt.svg"
+                  alt="Icon 1"
+                  class="card-icon"
+                />
               </div>
               <h5 class="card-title">Grow Your Business</h5>
               <p class="card-text text-muted">
-                It is a long established fact that a reader will be distracte 
-                by the readable content of a page when looking at its layout.
+                It is a long established fact that a reader will be distracte by
+                the readable content of a page when looking at its layout.
               </p>
-              <p class="business-paragraph card-link text-primary">Read More...</p>
+              <p class="business-paragraph card-link text-primary">
+                Read More...
+              </p>
             </div>
           </div>
 
           <div class="col">
             <div class="card border-0">
               <div class="icon-square mb-3">
-                <img src="/assets/IMAGE/sales.svg" alt="Icon 2" class="card-icon" />
+                <img
+                  src="/assets/IMAGE/sales.svg"
+                  alt="Icon 2"
+                  class="card-icon"
+                />
               </div>
               <h5 class="card-title">Get Quality Leads</h5>
               <p class="card-text text-muted">
@@ -338,14 +361,20 @@
           <div class="col">
             <div class="card shadow-sm border-0">
               <div class="icon-square mb-3">
-                <img src="./assets/IMAGE/quality.svg" alt="Icon 3" class="card-icon" />
+                <img
+                  src="./assets/IMAGE/quality.svg"
+                  alt="Icon 3"
+                  class="card-icon"
+                />
               </div>
               <h5 class="card-title">Drive More Sales</h5>
               <p class="card-text font-muted">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
-              <p class="business-paragraph card-link text-primary">Read More ...</p>
+              <p class="business-paragraph card-link text-primary">
+                Read More ...
+              </p>
             </div>
           </div>
         </div>
